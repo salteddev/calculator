@@ -79,19 +79,19 @@ function addingOperator(operator){
 }
 function getResult(){
     if (historyInput.innerText.includes('+')){
-        input.value = historyInput.value + parseInt(input.value).toFixed(1)
+        input.value = historyInput.value + parseInt(input.value)
         historyInput.innerText = '0'
     }
     else if(historyInput.innerText.includes('-')){
-        input.value = historyInput.value - parseFloat(input.value).toFixed(1)
+        input.value = historyInput.value - parseFloat(input.value)
         historyInput.innerText = '0'
     }
     else if(historyInput.innerText.includes('x')){
-        input.value = historyInput.value * parseFloat(input.value).toFixed(1)
+        input.value = historyInput.value * parseFloat(input.value)
         historyInput.innerText = '0'
     }
     else if(historyInput.innerText.includes('/')){
-        input.value = historyInput.value / parseFloat(input.value).toFixed(1)
+        input.value = historyInput.value / parseFloat(input.value)
         historyInput.innerText = '0'
     }
 }
