@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="calculator">
+    <div class="history">
+        <p>0</p>
+    </div>
+    <div class="display">
+        <form>
+            <input readonly type="text">
+        </form>
+    </div>
+    <div class="buttons">
+        <div class="top-buttons">
+            <div onclick="addingOperator('+')" id="plus" class="operator item">
+                +
+            </div>
+            <div onclick="addingOperator('-')" id="minus" class="operator item">
+                -
+            </div>
+            <div onclick="addingOperator('/')" id="divide" class="operator item">
+                ÷
+            </div>
+            <div onclick="addingOperator('*')" id="multiply" class="operator item">
+                х
+            </div>
+        </div>
+        <div class="bottom-buttons">
+            <div class="numbers">
+                <div id="one" onclick="action('1')" class="number item">1</div>
+                <div id="two" onclick="action('2')" class="number item">2</div>
+                <div id="three" onclick="action('3')" class="number item">3</div>
+                <div id="four" onclick="action('4')" class="number item">4</div>
+                <div id="five" onclick="action('5')" class="number item">5</div>
+                <div id="six" onclick="action('6')" class="number item">6</div>
+                <div id="seven" onclick="action('7')" class="number item">7</div>
+                <div id="eight" onclick="action('8')" class="number item">8</div>
+                <div id="nine" onclick="action('9')" class="number item">9</div>
+                <div id="zero" onclick="action('0')" class="number item">0</div>
+                <div id="dot" onclick="action('.')" class="dot item">.</div>
+                <div id="clear" onclick="clearAll()" class="clear item">AC</div>
+            </div>
+            <div onclick="getResult()" class="equal">=</div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dedede;
+    height: 100vh;
+}
+.calculator{
+    background: #f2f2f2f2;
+    border-radius: 6px;
+}
+.top-buttons{
+    display: flex;
+}
+.bottom-buttons{
+    display: flex;
+}
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 192px;
+}
+.history{
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #dedede;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+.display{
+    justify-content: flex-end;
+    display: flex;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+.display input, .history input{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    background: #dedede;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.equal{
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background: #dedede;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.display input, .history input{
+    text-align: right;
+}
+.display form, .history form{
+    width: 100%;
+}
